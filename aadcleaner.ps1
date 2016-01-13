@@ -1,6 +1,6 @@
-$aadtenant = "rmftst2.onmicrosoft.com"
-$aadadminuser = "aadadmin@rmftst2.onmicrosoft.com"
-$aadadminpassword = ConvertTo-SecureString -String "zer0!Two" -AsPlainText -Force
+$aadtenant = "_______.onmicrosoft.com"
+$aadadminuser = "aadadmin@_______.onmicrosoft.com"
+$aadadminpassword = ConvertTo-SecureString -String "********" -AsPlainText -Force
 $aadadmincredentials = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $aadadminuser, $aadadminpassword
 Connect-MsolService -Credential $aadadmincredentials
 

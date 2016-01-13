@@ -3,9 +3,9 @@
 # where -genid is a switch enabling multiple load generators to operate simultaneously 
 param ([string]$genid = "genid")
 
-$aadtenant = "rmftst2.onmicrosoft.com"
-$aadadminuser = "aadadmin@rmftst2.onmicrosoft.com"
-$aadadminpassword = ConvertTo-SecureString -String "zer0!Two" -AsPlainText -Force
+$aadtenant = "______.onmicrosoft.com"
+$aadadminuser = "aadadmin@______.onmicrosoft.com"
+$aadadminpassword = ConvertTo-SecureString -String "********" -AsPlainText -Force
 $aadadmincredentials = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $aadadminuser, $aadadminpassword
 Connect-MsolService -Credential $aadadmincredentials
 
